@@ -1,19 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5a1a5b242f.js" crossorigin="anonymous"></script>
+    <title>Generador de Memes</title>
 </head>
 <body>
-
-
-
-
-
-
+    <h1 class="Title">Generador de Memes</h1>
+    <div class="Editors">
+        <h2><i class="fa-regular fa-file-image"></i>Imagen</h2>
+        <h2><i class="fa-solid fa-a"></i>Texto</h2>
+        <h2><i class="fa-regular fa-lightbulb"></i>Modo oscuro</h2>
+        <h2><i class="fa-solid fa-lightbulb"></i>Modo claro</h2>
+    </div>
     
+    <main>
+        <section class="Container-meme">
+        <div class="Top-text">TOP TEXT</div>
+        <div class="Img-meme"></div>
+        <div class="Bottom-text">BOTTOM TEXT</div> 
+        </section>
+        
+        <section class="Text-editor">
+            <h2>TEXTO</h2>
+            <div>
+                <h3>SUPERIOR</h3>
+                <input type="text" placeholder="TOP TEXT" id="">
+            </div>
+
+            <input type="checkbox" name="" id="">Sin texto superior
+
+            <div>
+                <h3>INFERIOR</h3>
+                <input type="text" placeholder="BOTTOM TEXT" id="">                
+            </div>
+
+            <input type="checkbox" name="Sin texto superior" id="">Sin texto inferior
+
+            <div>
+                <h3>FUENTE</h3>
+                <select name="" id="">
+                    <option value="">Arial</option>
+                    <option value="">Arial Black</option>
+                    <option value="">American Typewriter</option>
+                    <option value="">Andale Mono</option>
+                    <option value="">Comic Sans MS</option>
+                    <option value="">Helvetica</option>
+                    <option value="">Impact</option>
+                    <option value="">Verdana</option>
+                    <option value="">Times New Roman</option>              
+                </select>
+
+                <input type="number" name="" id="">
+                <button><i class="fa-solid fa-align-left"></i></button>
+                <button><i class="fa-solid fa-align-center"></i></button>
+                <button><i class="fa-solid fa-align-right"></i></button>
+
+            </div>
+
+            <div>
+                <h3>COLOR</h3>
+                <input label for="" type="color" name="" id="" value="#000000">
+                <h3>FONDO</h3>
+                <input type="color" name="" id="" value="#FFFFFF"> 
+            </div>
+
+            <input type="checkbox" name="Fondo transparente" id="">Fondo transparente
+
+            <div>
+            <h3>CONTORNO</h3>
+            <button>Ninguno</button>
+            <button>Claro</button>
+            <button>Oscuro</button>           
+            </div>
+
+            <div>
+                <h3>ESPACIADO</h3>
+                <input type="number" name="" id="">
+            </div>
+
+            <div>
+                <h3>INTERLINEADO</h3>                
+                <select name="" id="">
+                    <option value="">0.8</option>
+                    <option value="">1</option>
+                    <option value="">1.2</option>
+                    <option value="">1.5</option>
+                    <option value="">2</option>
+                    <option value="">2.5</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="Image-editor">
+            <h2>IMAGEN</h2>
+            <div><h3>URL</h3><input type="text" name="" id="url"></div>
+            <div><h3>FONDO</h3><input type="color" name="color" id="">            
+                <select name="" id="Marcas">
+                 <option value="">Ninguno</option>
+                 <option value="">Aclarar</option>
+                 <option value="">Oscurecer</option>
+                 <option value="">Diferencia</option>
+                 <option value="">Luminosidad</option>
+                 <option value="">Multiplicar</option>
+                </select>
+            </div>
+            
+            
+            <div class="form-group">
+                <h3>FILTROS</h3>
+                <label for="Brightness">BRILLO</label>
+                <input type="range" name="" id="Brightness">
+
+                <label for="Opacity">OPACIDAD</label>
+                <input type="range" name="" id="Opacity">
+
+                <label for="Contrast">CONTRASTE</label>
+                <input type="range" name="" id="Contrast">
+
+                <label for="Blur">DESENFOQUE</label>
+                <input type="range" name="" id="Blur">
+
+                <label for="Grayscale">ESCALA DE GRISES</label>
+                <input type="range" name="" id="Grayscale">
+
+                <label for="Sepia">SEPIA</label>
+                <input type="range" name="" id="Sepia">
+
+                <label for="Hue">HUE</label>
+                <input type="range" name="" id="Hue">
+
+                <label for="Saturated">SATURADO</label>
+                <input type="range" name="" id="Saturated">
+
+                <label for="Negative">NEGATIVO</label>
+                <input type="range" name="" id="Negative">
+
+                <button btn-ResetFilters>Reestablecer filtros</button>
+
+            </div>
+        </section>     
+
+    </main>
+
+    <footer>
+        &copyKarinaBoock 
+    </footer>
+
+   
 <script src="./main.js"></script>    
 </body>
 </html>

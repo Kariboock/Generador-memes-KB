@@ -8,8 +8,11 @@
 }
 
 body{
-    background-color: gray;
-    
+    background-color: rgb(40, 53, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav{
@@ -19,41 +22,42 @@ body{
 
 .Title{
     width:100% ;
-    height: 40px;
+    height: x;
     font-size:1.5rem ;
-    background-color: darkslategray;
-    color: aliceblue;
+    background-color: rgb(14, 25, 37);
+    color: #fff;
     text-align: center; 
+    padding: 5px;    
 }
 
 .Editors{
     width: 100%;
-    height: 40px;
-    font-size: 1 rem;
-    background-color: darkslategray;
-    color: aliceblue;   
+    height: 60px;
+    font-size: 1rem;
+    background-color: rgb(14, 25, 37);
+    color: #fff;   
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .Container-meme{
     width: 100%;
-    height: 60%;
-    padding: 20% 10%;
-    
+    height: 100%;
+    padding: 5rem 1.2rem 2rem;      
 }
 
 .Top-text,.Bottom-text{
-    height: 3rem;
-    background-color: aliceblue;
+    height: 2rem;
+    font-size: 0.8rem;
+    background-color:#fff;
     text-align: center;
     -webkit-text-stroke: 2px;
-    padding-top:4%;
+    padding: 3px;
 }
 
 .Img-meme{
     background-color: black;
-    height: 20rem;
+    height: 15rem;
 }
     
 .Text-editor,.Image-editor{
@@ -69,19 +73,73 @@ body{
     margin-top: 0; 
 }
 
+.fa-solid,.fa-regular{
+    padding: 8px;
+}
+
 .checkbtn{
     cursor: pointer;
     background-color: transparent;
     justify-content: center;
     border: none;
-    font-size: 1rem;
-    color: aliceblue;
-    padding: 5px;
+    font-size: 1rem; 
+    color: aliceblue;    
 }
 
 .download{
     color: #fff;
-    background-color: green;
-    padding:3%;
-   
+    background-color: rgb(37, 134, 37);
+    padding: 10px;
 }
+
+.copy{
+    margin-top: 30%;   
+}
+
+@media (min-width: 768px){
+
+    .Title{
+        font-size: 2.2rem;
+    }
+
+    .Top-text,.Bottom-text{
+        font-size: 2rem ;
+        height: 4rem;
+        -webkit-text-stroke: 4px;
+    }
+
+    .Img-meme{
+        height: 25rem;
+    }
+
+    .Container-meme{
+        padding: 7rem 3rem 2rem;       
+    }
+}
+
+@media (min-width: 1024px){
+
+    .Title{
+        font-size: 3rem;
+    }
+
+    .checkbtn{
+        font-size: 1.5rem;
+    }
+
+    .Top-text ,.Bottom-text{
+        font-size: 3rem ;
+        height: 6rem;
+        -webkit-text-stroke: 5px;
+    }
+
+    .Img-meme{
+        height: 38rem;
+    }
+    
+    .Container-meme{
+        padding: 8rem 5rem 2rem;       
+    }
+}
+
+    

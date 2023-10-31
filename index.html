@@ -26,21 +26,21 @@
         <h2 class="Title-editor">TEXTO</h2>
             <div>
                 <h3 class="Title-input">SUPERIOR</h3>
-                <textarea name="" id="area" cols="20" rows="1">TOP TEXT</textarea>
+                <textarea name="" id="Top-Text" cols="20" rows="1">TOP TEXT</textarea>
             </div> 
 
         <input type="checkbox" name="Sin texto superior" id=""><label for="Text">Sin texto superior</label>
 
         <div>
             <h3 class="Title-input">INFERIOR</h3>
-            <textarea name="" id="area" cols="20" rows="1">BOTTOM TEXT</textarea>                
+            <textarea name="" id="Bottom-text" cols="20" rows="1">BOTTOM TEXT</textarea>                
         </div>
 
         <input type="checkbox" name="Sin texto inferior" id=""><label for="Text">Sin texto inferior</label>
 
         <div>
             <h3 class="Title-input">FUENTE</h3>
-            <select class="Fuente" name="" id="">
+            <select class="Fuente" name="" id="fuente">
                 <option value="">Arial</option>
                 <option value="">Arial Black</option>
                 <option value="">American Typewriter</option>
@@ -61,9 +61,9 @@
 
         <div>
             <h3 class="Title-input">COLOR</h3>
-            <input class="Color" type="color" name="" id="" value="#000000">
+            <input class="Color" type="color" name="" id="color" value="#000000">
             <h3 class="Title-input">FONDO</h3>
-            <input class="Color" type="color" name="" id="" value="#FFFFFF"> 
+            <input class="Color" type="color" name="" id="fondo" value="#FFFFFF"> 
         </div>
 
         <input type="checkbox" name="Fondo transparente" id=""><label for="Text">Fondo transparente</label>
@@ -96,8 +96,13 @@
 
     <section class="Image-editor">
         <h2 class="Title-editor">IMAGEN</h2>
-        <div><h3 class="Title-input">URL</h3><input class="Url" type="text" name="" id="url"></div>
-        <div><h3 class="Title-input">FONDO</h3><input class="Fondo" type="color" name="color" id="" value="">            
+        <div>
+            <label class="Title-input">URL</label>
+            <input class="Url" type="text" name="" id="url">
+        </div>
+        <div>
+            <label class="Title-input">FONDO</label>
+            <input class="Fondo" type="color" name="color" id="fondo-meme" value="">            
             <select class="Clarity-Levels" name="" id="">
              <option value="">Ninguno</option>
              <option value="">Aclarar</option>
@@ -112,42 +117,41 @@
             <h3 class="Title-input">FILTROS</h3>
 
             <label for="Brightness">BRILLO</label>
-            <input class="Filters" type="range" name="" id="Brightness">
+            <input class="Filters" type="range" name="" id="Brightness" min="0" max="1" step="0.1">
 
             <label for="Opacity">OPACIDAD</label>
-            <input class="Filters" type="range" name="" id="Opacity">
+            <input class="Filters" type="range" name="" id="Opacity" min="0" max="1" step="0.1">
 
             <label for="Contrast">CONTRASTE</label>
-            <input class="Filters" type="range" name="" id="Contrast">
+            <input class="Filters" type="range" name="" id="Contrast" min="100%" max="1000%" step="1%">
 
             <label for="Blur">DESENFOQUE</label>
-            <input class="Filters" type="range" name="" id="Blur">
+            <input class="Filters" type="range" name="" id="Blur" min="0px" max="10px" step="0.1px">
 
             <label for="Grayscale">ESCALA DE GRISES</label>
-            <input class="Filters" type="range" name="" id="Grayscale">
+            <input class="Filters" type="range" name="" id="Grayscale" min="0%" max="100%" step="1%">
 
             <label for="Sepia">SEPIA</label>
-            <input class="Filters" type="range" name="" id="Sepia">
+            <input class="Filters" type="range" name="" id="Sepia" min="0%" max="100%" step="1%">
 
             <label for="Hue">HUE</label>
-            <input class="Filters" type="range" name="" id="Hue">
+            <input class="Filters" type="range" name="" id="Hue" min="0deg" max="359deg" step="1deg">
 
             <label for="Saturated">SATURADO</label>
-            <input class="Filters" type="range" name="" id="Saturated">
+            <input class="Filters" type="range" name="" id="Saturated" min="100%" max="1000%" step="10%">
 
             <label for="Negative">NEGATIVO</label>
-            <input class="Filters" type="range" name="" id="Negative">
+            <input class="Filters" type="range" name="" id="Negative" min="0" max="1" step="0.1">
 
             <button class="btn-ResetFilters">Reestablecer filtros</button>
 
         </div>
-    </section> 
-       
-    
+    </section>  
+     
         <section class="Container-meme">
-        <div class="Top-text"><b>TOP TEXT</b></div>
+        <div class="Top-text"><p class="paragraph-top">TOP TEXT</p></div>
         <div class="Img-meme"></div>
-        <div class="Bottom-text"><b>BOTTOM TEXT</b></div>         
+        <div class="Bottom-text"><p class="paragraph-bottom">BOTTOM TEXT</p></div>         
         </section>
 
         <button class="download"><i class="fa-solid fa-download"></i>Descargar meme</button>         
@@ -156,6 +160,6 @@
         <b>&copyKarinaBoock </b>
     </footer>
 
-<script src="./main.js"></script>    
+<script src="./JS/main.js"></script>    
 </body>
 </html>

@@ -2,8 +2,12 @@ const $ = (selector) => document.querySelector(selector)
 
 $("#Top-Text").addEventListener("input", (e) => {
     $(".paragraph-top").innerText = e.target.value
+})
+
+$("#Bottom-text").addEventListener("input", (e) => {
     $(".paragraph-bottom").innerText = e.target.value
 })
+
 
 $("#color").addEventListener("input", (e) => {
     $(".Top-text").style.color = e.target.value
@@ -97,8 +101,6 @@ $(".button-text").addEventListener("click", (e) => {
 })
 
 
-
-
 $("#url").addEventListener("input", (e) => {
     $(".Img-meme").style.backgroundImage = `url(${e.target.value})`
 })
@@ -141,5 +143,18 @@ const downloadMeme = () => {
 }
 
 $(".download").addEventListener("click",downloadMeme)
+
+$(".Mode-Switching").addEventListener("click", () => {
+    const currentTheme = $("body").getAttribute ("data-theme")
+    if (currentTheme) {
+        $("body").removeAttribute("data-theme" , "light-theme")
+    } else { 
+        $("body").setAttribute("data-theme" , "light-theme")
+    }  
+
+    $("#button-DarkMode").classList.toggle("hidden") 
+    $("#button-ClearMode").classList.toggle("hidden") 
+  
+})
 
 

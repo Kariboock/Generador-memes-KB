@@ -134,5 +134,12 @@ $(".btn-ResetFilters").addEventListener("click",() => {
     $(".Img-meme").style.filter ="none"
 })
 
+const downloadMeme = () => {
+    domtoimage.toBlob($(".Container-meme")).then((blob) => {
+        saveAs(blob, "my-meme.png")
+    })
+}
+
+$(".download").addEventListener("click",downloadMeme)
 
 

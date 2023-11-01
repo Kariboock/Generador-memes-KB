@@ -48,8 +48,8 @@
             <select class="fuente" name="font" id="font">
                 <option value="Open Sans">Selecciona</option>
                 <option value="Arial, Helvetica, sans-serif">Arial</option>
-                <!-- <option value="">Arial Black</option>
-                <option value="">American Typewriter</option> -->
+                <option value="">Arial Black</option>
+                <option value="">American Typewriter</option>
                 <option value="Roboto">Roboto</option>
                 <option value="Comic Sans MS">Comic Sans MS</option>
                 <option value="">Helvetica</option>
@@ -110,13 +110,13 @@
         <div>
             <label class="Title-input">FONDO</label>
             <input class="Fondo" type="color" name="color" id="fondo-meme" value="">            
-            <select class="Clarity-Levels" name="" id="">
-             <option value="">Ninguno</option>
-             <option value="">Aclarar</option>
-             <option value="">Oscurecer</option>
-             <option value="">Diferencia</option>
-             <option value="">Luminosidad</option>
-             <option value="">Multiplicar</option>
+            <select class="Clarity-Levels" name="" id="Levels">
+             <option value="None">Ninguno</option>
+             <option value="Clarify">Aclarar</option>
+             <option value="Darken">Oscurecer</option>
+             <option value="Difference">Diferencia</option>
+             <option value="Luminosity">Luminosidad</option>
+             <option value="Multiply">Multiplicar</option>
             </select>
         </div>
             <label for="Brightness">BRILLO</label>
@@ -138,7 +138,7 @@
             <input class="Filters" type="range" name="" id="Sepia" min="0" max="100" step="1" value="0">
 
             <label for="Hue">HUE</label>
-            <input class="Filters" type="range" name="" id="Hue" min="0" max="359" step="1" value="0">    
+            <input class="Filters" type="range" name="" id="hue-rotation" min="0" max="360" step="1" value="0">    
             
             <label for="Saturation">SATURADO</label>
             <input class="Filters" type="range" name="" id="Saturation" min="100" max="1000" step="10" value="100">

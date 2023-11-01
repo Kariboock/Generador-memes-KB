@@ -119,8 +119,8 @@ $("#Contrast").addEventListener("input", FiltersMeme)
 $("#Blur").addEventListener("input", FiltersMeme)
 $("#Grayscale").addEventListener("input", FiltersMeme)
 $("#Sepia").addEventListener("input", FiltersMeme)
-$("#Hue").addEventListener("input", FiltersMeme)
-$("#Saturation").addEventListener("input", FiltersMeme)
+// $("#hue-rotation").addEventListener("input", FiltersMeme)
+// $("#Saturation").addEventListener("input", FiltersMeme)
 $("#Invert").addEventListener("input", FiltersMeme)
 
 $(".btn-ResetFilters").addEventListener("click",() => {
@@ -135,6 +135,11 @@ $(".btn-ResetFilters").addEventListener("click",() => {
     $("#Invert").value = "0"
     $(".Img-meme").style.filter ="none"
 })
+
+$("#Levels").addEventListener("input", (e) => {
+    $(".Img-meme").style.backgroundBlendMode = e.target.value    
+})
+
 
 const downloadMeme = () => {
     domtoimage.toBlob($(".Container-meme")).then((blob) => {

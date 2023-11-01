@@ -6,14 +6,14 @@
     --background-primary: rgb(40, 53, 68);
     --background-secondary: rgb(14, 25, 37);
     --background-tertiary:  rgb(14, 25, 37);
-    --background-Fourth:  rgb(128, 128, 128);
+    --background-Fourth:   rgb(31, 51, 73);
 }
 
 [data-theme="light-theme"]{
     --background-primary: rgb(122, 155, 197);
     --background-secondary: rgb(94, 125, 158);
     --background-tertiary:  rgb(94, 125, 158);
-    --background-Fourth: rgb(184, 184, 184);  
+    --background-Fourth:   rgb(193, 211, 230);
 }
 
 *{
@@ -83,7 +83,7 @@ body{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-image: grey;
+    background-color: rgb(31, 51, 73);
     top: 80px;
     left: -100%;
     text-align: center;
@@ -97,12 +97,12 @@ body{
     padding: 8px;
 }
 
-.button{
+button{
     cursor: pointer;
     background-color: transparent;
     justify-content: center;
     border: none;
-    font-size: 1rem; 
+    font-size: 0.8rem; 
     color: aliceblue;  
 }
 

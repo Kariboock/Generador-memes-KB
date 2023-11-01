@@ -8,7 +8,6 @@ $("#Bottom-text").addEventListener("input", (e) => {
     $(".paragraph-bottom").innerText = e.target.value
 })
 
-
 $("#color").addEventListener("input", (e) => {
     $(".Top-text").style.color = e.target.value
     $(".Bottom-text").style.color = e.target.value
@@ -140,6 +139,15 @@ $("#Levels").addEventListener("input", (e) => {
     $(".Img-meme").style.backgroundBlendMode = e.target.value    
 })
 
+$("#Interlineado").addEventListener("input", (e) => {
+    $(".Top-text").style.height = `${e.target.value}5px`
+    $(".Bottom-text").style.height = `${e.target.value}5px` 
+})
+
+$("#spacing").addEventListener("input", (e) => {
+    $(".Top-text").style.padding = `${e.target.value}px`
+    $(".Bottom-text").style.padding = `${e.target.value}px` 
+})
 
 const downloadMeme = () => {
     domtoimage.toBlob($(".Container-meme")).then((blob) => {
@@ -158,8 +166,7 @@ $(".Mode-Switching").addEventListener("click", () => {
     }  
 
     $("#button-DarkMode").classList.toggle("hidden") 
-    $("#button-ClearMode").classList.toggle("hidden") 
-  
+    $("#button-ClearMode").classList.toggle("hidden")   
 })
 
 
